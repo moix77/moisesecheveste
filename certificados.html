@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* Adicione alguns estilos para o mosaico */
+      .image-mosaic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px 0; /* Ajuste a margem conforme necessário */
+      }
+
+      .image-mosaic a {
+        width: 48%; /* Ajuste a largura de cada imagem */
+        margin-bottom: 10px; /* Ajuste a margem entre as imagens */
+        text-decoration: none; /* Remova a sublinhado do link */
+      }
+
+      .image-mosaic img {
+        width: 100%; /* Preencha a largura do contêiner pai (a tag <a>) */
+        height: auto; /* Mantenha a proporção original da imagem */
+      }
+    </style>
+
+    <title>Moisés Echeveste</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="wallpaper1.png"
+        alt="Logo Moisés Echeveste"
+        style="max-width: 100%; height: auto"
+      />
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"
+            >&nbsp;Perfil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a
+          >
+        </li>
+        <li><a href="portfolio.html">&nbsp;&nbsp;Portfólios&nbsp;&nbsp;</a></li>
+        <li>
+          <a href="certificados.html"
+            >|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Certificados&nbsp;&nbsp;</a
+          >
+        </li>
+        <li>
+          <a href="contatos.html"
+            >|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contatos</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Meus Cursos Realizados</h1>
+      <div class="image-mosaic">
+        <!-- Adicione links em torno das imagens -->
+        <a href="jscurso.pdf" target="_blank"
+          ><img src="jscurso.png" alt="Curso 4"
+        /></a>
+        <a href="1.png" target="_blank"><img src="1.png" alt="Curso 1" /></a>
+        <a href="2.png" target="_blank"><img src="2.png" alt="Curso 2" /></a>
+        <a href="3.png" target="_blank"><img src="3.png" alt="Curso 3" /></a>
+
+        <!-- Adicione mais imagens conforme necessário -->
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Moisés Echeveste</p>
+    </footer>
+  </body>
+</html>
