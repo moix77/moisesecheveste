@@ -1,292 +1,426 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8">
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css">
 
-    <style>
-      /* ==============================
-         MOSAICO DE IMAGENS
-         ============================== */
+  <title>Moisés Echeveste - Certificados</title>
+
+  <style>
+    /* ========================================
+       CONFIGURAÇÃO GERAL
+       ======================================== */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0 30px;
+    }
+
+
+    /* ========================================
+       CABEÇALHO
+       ======================================== */
+
+    header {
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    header img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+    /* ========================================
+       MOSAICO DE IMAGENS
+       ======================================== */
+
+    .image-mosaic {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .image-mosaic a,
+    .image-mosaic .diploma {
+      width: 100%;
+      display: block;
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-mosaic img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+
+    /* ========================================
+       DIPLOMA
+       ======================================== */
+
+    .image-mosaic .diploma {
+      width: 100%;
+      display: block;
+    }
+
+    .image-mosaic .diploma img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+
+    /* ========================================
+       CELULAR
+       ======================================== */
+
+    @media (max-width: 600px) {
+
+      main {
+        width: 100%;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 24px;
+        text-align: center;
+        margin: 15px 0 25px;
+      }
 
       .image-mosaic {
+        width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
         margin: 20px 0;
-        width: 100%;
-        box-sizing: border-box;
       }
 
-      .image-mosaic a {
-        width: calc(50% - 8px);
-        margin-bottom: 10px;
-        text-decoration: none;
-        display: block;
-        box-sizing: border-box;
-      }
-
-      .image-mosaic img {
+      .image-mosaic a,
+      .image-mosaic .diploma {
         width: 100%;
-        height: auto;
         max-width: 100%;
         display: block;
-        object-fit: contain;
       }
 
-      /* ==============================
-         DIPLOMA
-         ============================== */
-
-      .image-mosaic .diploma {
-        width: calc(50% - 8px);
+      .image-mosaic img,
+      .image-mosaic .diploma img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
         display: block;
       }
+    }
 
+
+    /* ========================================
+       TELAS MUITO PEQUENAS
+       ======================================== */
+
+    @media (max-width: 400px) {
+
+      main {
+        padding: 8px;
+      }
+
+      h1 {
+        font-size: 21px;
+      }
+
+      .image-mosaic {
+        gap: 15px;
+      }
+
+      .image-mosaic a,
+      .image-mosaic .diploma {
+        width: 100%;
+      }
+
+      .image-mosaic img,
       .image-mosaic .diploma img {
         width: 100%;
         height: auto;
-        max-width: 100%;
-        display: block;
-        object-fit: contain;
       }
+    }
+  </style>
+</head>
 
-      /* ==============================
-         CELULAR
-         ============================== */
 
-      @media (max-width: 600px) {
-        .image-mosaic {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 20px;
-          width: 100%;
-          margin: 20px 0;
-          padding: 0;
-        }
+<body>
 
-        .image-mosaic a {
-          width: 100%;
-          max-width: 100%;
-          margin-bottom: 0;
-        }
+  <!-- ========================================
+       CABEÇALHO
+       ======================================== -->
 
-        .image-mosaic img {
-          width: 100%;
-          max-width: 100%;
-          height: auto;
-          display: block;
-          object-fit: contain;
-        }
+  <header>
+    <img
+      src="./wallpaper1.png"
+      alt="Logo Moisés Echeveste"
+    >
+  </header>
 
-        .image-mosaic .diploma {
-          width: 100%;
-          max-width: 100%;
-        }
 
-        .image-mosaic .diploma img {
-          width: 100%;
-          max-width: 100%;
-          height: auto;
-          display: block;
-          object-fit: contain;
-        }
+  <!-- ========================================
+       MENU
+       ======================================== -->
 
-        main {
-          width: 100%;
-          padding: 0 10px;
-          box-sizing: border-box;
-        }
+  <nav>
+    <ul>
 
-        h1 {
-          font-size: 24px;
-          text-align: center;
-          margin-bottom: 20px;
-        }
-      }
+      <li>
+        <a href="./index.html">
+          Perfil
+        </a>
+      </li>
 
-      /* ==============================
-         TELAS MUITO PEQUENAS
-         ============================== */
+      <li>
+        <a href="./portfolio.html">
+          Portfólios
+        </a>
+      </li>
 
-      @media (max-width: 400px) {
-        main {
-          padding: 0 8px;
-        }
+      <li>
+        <a href="./certificados.html">
+          Certificados
+        </a>
+      </li>
 
-        h1 {
-          font-size: 21px;
-        }
+      <li>
+        <a href="./contatos.html">
+          Contatos
+        </a>
+      </li>
 
-        .image-mosaic {
-          gap: 15px;
-        }
+    </ul>
+  </nav>
 
-        .image-mosaic a,
-        .image-mosaic .diploma {
-          width: 100%;
-        }
 
-        .image-mosaic img,
-        .image-mosaic .diploma img {
-          width: 100%;
-          height: auto;
-        }
-      }
-    </style>
+  <!-- ========================================
+       CONTEÚDO
+       ======================================== -->
 
-    <title>Moisés Echeveste</title>
-  </head>
+  <main>
 
-  <body>
+    <h1>
+      Meus Cursos Realizados
+    </h1>
 
-    <!-- ==============================
-         CABEÇALHO
-         ============================== -->
 
-    <header>
-      <img
-        src="wallpaper1.png"
-        alt="Logo Moisés Echeveste"
-        style="max-width: 100%; height: auto"
-      />
-    </header>
+    <div class="image-mosaic">
 
-    <!-- ==============================
-         MENU
-         ============================== -->
 
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">
-            &nbsp;Perfil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
-          </a>
-        </li>
+      <!-- ====================================
+           1 - DIPLOMA MOISES
+           ==================================== -->
 
-        <li>
-          <a href="portfolio.html">
-            &nbsp;&nbsp;Portfólios&nbsp;&nbsp;
-          </a>
-        </li>
+      <a
+        class="diploma"
+        href="./DIPLOMA%20MOISES.PNG"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
 
-        <li>
-          <a href="certificados.html">
-            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Certificados&nbsp;&nbsp;
-          </a>
-        </li>
-
-        <li>
-          <a href="contatos.html">
-            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contatos
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- ==============================
-         CONTEÚDO
-         ============================== -->
-
-    <main>
-      <h1>Meus Cursos Realizados</h1>
-
-      <div class="image-mosaic">
-
-        <!-- 1º - DIPLOMA MOISES -->
-        <a
-          class="diploma"
-          href="DIPLOMA%20MOISES.PNG"
-          target="_blank"
+        <img
+          src="./DIPLOMA%20MOISES.PNG"
+          alt="Diploma Moisés Echeveste"
         >
-          <img
-            src="DIPLOMA%20MOISES.PNG"
-            alt="Diploma Moisés"
-          />
-        </a>
 
-        <!-- 2º - CURSO JAVASCRIPT -->
-        <a href="jscurso.pdf" target="_blank">
-          <img
-            src="jscurso.png"
-            alt="Curso JavaScript"
-          />
-        </a>
+      </a>
 
-        <!-- 3º - CURSO 1 -->
-        <a href="1.png" target="_blank">
-          <img
-            src="1.png"
-            alt="Curso 1"
-          />
-        </a>
 
-        <!-- 4º - CURSO 2 -->
-        <a href="2.png" target="_blank">
-          <img
-            src="2.png"
-            alt="Curso 2"
-          />
-        </a>
+      <!-- ====================================
+           2 - CURSO JAVASCRIPT
+           ==================================== -->
 
-        <!-- 5º - CURSO 3 -->
-        <a href="3.png" target="_blank">
-          <img
-            src="3.png"
-            alt="Curso 3"
-          />
-        </a>
+      <a
+        href="./jscurso.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
 
-        <!-- 6º - CURSO 4 -->
-        <a href="4.png" target="_blank">
-          <img
-            src="4.png"
-            alt="Curso 4"
-          />
-        </a>
+        <img
+          src="./jscurso.png"
+          alt="Curso JavaScript"
+        >
 
-        <!-- 7º - CURSO 5 -->
-        <a href="5.png" target="_blank">
-          <img
-            src="5.png"
-            alt="Curso 5"
-          />
-        </a>
+      </a>
 
-        <!-- 8º - CURSO 6 -->
-        <a href="6.png" target="_blank">
-          <img
-            src="6.png"
-            alt="Curso 6"
-          />
-        </a>
 
-        <!-- 9º - CURSO 7 -->
-        <a href="7.png" target="_blank">
-          <img
-            src="7.png"
-            alt="Curso 7"
-          />
-        </a>
+      <!-- ====================================
+           3 - CURSO 1
+           ==================================== -->
 
-      </div>
-    </main>
+      <a
+        href="./1.png"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
 
-    <!-- ==============================
-         RODAPÉ
-         ============================== -->
+        <img
+          src="./1.png"
+          alt="Curso 1"
+        >
 
-    <footer>
-      <p>&copy; 2023 Moisés Echeveste</p>
-    </footer>
+      </a>
 
-  </body>
+
+      <!-- ====================================
+           4 - CURSO 2
+           ==================================== -->
+
+      <a
+        href="./2.png"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <img
+          src="./2.png"
+          alt="Curso 2"
+        >
+
+      </a>
+
+
+      <!-- ====================================
+           5 - CURSO 3
+           ==================================== -->
+
+      <a
+        href="./3.png"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <img
+          src="./3.png"
+          alt="Curso 3"
+        >
+
+      </a>
+
+
+      <!-- ====================================
+           6 - CURSO 4
+           ==================================== -->
+
+      <a
+        href="./4.png"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <img
+          src="./4.png"
+          alt="Curso 4"
+        >
+
+      </a>
+
+
+      <!-- ====================================
+           7 - CURSO 5
+           ==================================== -->
+
+      <a
+        href="./5.png"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <img
+          src="./5.png"
+          alt="Curso 5"
+        >
+
+      </a>
+
+
+      <!-- ====================================
+           8 - CURSO 6
+           ==================================== -->
+
+      <a
+        href="./6.png"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <img
+          src="./6.png"
+          alt="Curso 6"
+        >
+
+      </a>
+
+
+      <!-- ====================================
+           9 - CURSO 7
+           ==================================== -->
+
+      <a
+        href="./7.png"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <img
+          src="./7.png"
+          alt="Curso 7"
+        >
+
+      </a>
+
+    </div>
+
+  </main>
+
+
+  <!-- ========================================
+       RODAPÉ
+       ======================================== -->
+
+  <footer>
+    <p>
+      &copy; 2023 Moisés Echeveste
+    </p>
+  </footer>
+
+</body>
 </html>
+
