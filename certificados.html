@@ -2,30 +2,53 @@
 <html lang="pt-BR">
 
 <head>
-
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./style.css">
 
-  <title>Moisés Echeveste</title>
+  <title>Moisés Echeveste - Certificados</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
 
-    /* ==============================
-       MOSAICO
-       ============================== */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    header img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0 30px;
+    }
 
     .image-mosaic {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
       width: 100%;
-      margin: 20px 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
     }
 
     .image-mosaic a {
@@ -39,14 +62,9 @@
       width: 100%;
       max-width: 100%;
       height: auto;
-      object-fit: contain;
     }
 
-
-    /* ==============================
-       DIPLOMA
-       ============================== */
-
+    /* DIPLOMA */
     .diploma {
       width: 100%;
       display: block;
@@ -54,27 +72,21 @@
 
     .diploma img {
       width: 100%;
-      max-width: 100%;
       height: auto;
       display: block;
     }
 
-
-    /* ==============================
-       CELULAR
-       ============================== */
-
+    /* CELULAR */
     @media (max-width: 600px) {
 
       main {
         width: 100%;
         padding: 10px;
-        box-sizing: border-box;
       }
 
       h1 {
         font-size: 24px;
-        text-align: center;
+        margin-bottom: 25px;
       }
 
       .image-mosaic {
@@ -96,11 +108,6 @@
       }
     }
 
-
-    /* ==============================
-       TELAS PEQUENAS
-       ============================== */
-
     @media (max-width: 400px) {
 
       main {
@@ -114,38 +121,25 @@
       .image-mosaic {
         gap: 15px;
       }
-
     }
-
   </style>
-
 </head>
-
 
 <body>
 
-
-  <!-- ==============================
-       CABEÇALHO
-       ============================== -->
+  <!-- CABEÇALHO -->
 
   <header>
-
     <img
       src="./wallpaper1.png"
       alt="Logo Moisés Echeveste"
-      style="max-width:100%; height:auto;"
     >
-
   </header>
 
 
-  <!-- ==============================
-       MENU
-       ============================== -->
+  <!-- MENU -->
 
   <nav>
-
     <ul>
 
       <li>
@@ -173,27 +167,23 @@
       </li>
 
     </ul>
-
   </nav>
 
 
-  <!-- ==============================
-       CONTEÚDO
-       ============================== -->
+  <!-- CONTEÚDO -->
 
   <main>
 
-    <h1>
-      Meus Cursos Realizados
-    </h1>
-
+    <h1>Meus Cursos Realizados</h1>
 
     <div class="image-mosaic">
 
 
-      <!-- ==============================
-           1 - DIPLOMA MOISES
-           ============================== -->
+      <!-- =================================
+           DIPLOMA MOISES
+           NOME EXATO DO ARQUIVO:
+           DIPLOMA MOISES.png
+           ================================= -->
 
       <a
         class="diploma"
@@ -205,14 +195,13 @@
         <img
           src="./DIPLOMA%20MOISES.png"
           alt="Diploma Moisés"
+          onerror="this.onerror=null; this.src='DIPLOMA%20MOISES.png';"
         >
 
       </a>
 
 
-      <!-- ==============================
-           2 - CURSO JAVASCRIPT
-           ============================== -->
+      <!-- CURSO JAVASCRIPT -->
 
       <a
         href="./jscurso.pdf"
@@ -228,9 +217,7 @@
       </a>
 
 
-      <!-- ==============================
-           3 - CURSO 1
-           ============================== -->
+      <!-- CURSO 1 -->
 
       <a
         href="./1.png"
@@ -246,9 +233,7 @@
       </a>
 
 
-      <!-- ==============================
-           4 - CURSO 2
-           ============================== -->
+      <!-- CURSO 2 -->
 
       <a
         href="./2.png"
@@ -264,9 +249,7 @@
       </a>
 
 
-      <!-- ==============================
-           5 - CURSO 3
-           ============================== -->
+      <!-- CURSO 3 -->
 
       <a
         href="./3.png"
@@ -282,9 +265,7 @@
       </a>
 
 
-      <!-- ==============================
-           6 - CURSO 4
-           ============================== -->
+      <!-- CURSO 4 -->
 
       <a
         href="./4.png"
@@ -300,9 +281,7 @@
       </a>
 
 
-      <!-- ==============================
-           7 - CURSO 5
-           ============================== -->
+      <!-- CURSO 5 -->
 
       <a
         href="./5.png"
@@ -318,9 +297,7 @@
       </a>
 
 
-      <!-- ==============================
-           8 - CURSO 6
-           ============================== -->
+      <!-- CURSO 6 -->
 
       <a
         href="./6.png"
@@ -336,9 +313,7 @@
       </a>
 
 
-      <!-- ==============================
-           9 - CURSO 7
-           ============================== -->
+      <!-- CURSO 7 -->
 
       <a
         href="./7.png"
@@ -353,15 +328,12 @@
 
       </a>
 
-
     </div>
 
   </main>
 
 
-  <!-- ==============================
-       RODAPÉ
-       ============================== -->
+  <!-- RODAPÉ -->
 
   <footer>
 
@@ -370,7 +342,6 @@
     </p>
 
   </footer>
-
 
 </body>
 
