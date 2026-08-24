@@ -36,9 +36,26 @@
       .image-mosaic img {
         width: 100%;
         height: auto;
+        max-width: 100%;
         display: block;
         object-fit: contain;
+      }
+
+      /* ==============================
+         DIPLOMA
+         ============================== */
+
+      .image-mosaic .diploma {
+        width: calc(50% - 8px);
+        display: block;
+      }
+
+      .image-mosaic .diploma img {
+        width: 100%;
+        height: auto;
         max-width: 100%;
+        display: block;
+        object-fit: contain;
       }
 
       /* ==============================
@@ -51,9 +68,9 @@
           flex-direction: column;
           align-items: center;
           gap: 20px;
+          width: 100%;
           margin: 20px 0;
           padding: 0;
-          width: 100%;
         }
 
         .image-mosaic a {
@@ -63,6 +80,20 @@
         }
 
         .image-mosaic img {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          display: block;
+          object-fit: contain;
+        }
+
+        /* Diploma no celular */
+        .image-mosaic .diploma {
+          width: 100%;
+          max-width: 100%;
+        }
+
+        .image-mosaic .diploma img {
           width: 100%;
           max-width: 100%;
           height: auto;
@@ -100,11 +131,13 @@
           gap: 15px;
         }
 
-        .image-mosaic a {
+        .image-mosaic a,
+        .image-mosaic .diploma {
           width: 100%;
         }
 
-        .image-mosaic img {
+        .image-mosaic img,
+        .image-mosaic .diploma img {
           width: 100%;
           height: auto;
         }
@@ -115,6 +148,7 @@
   </head>
 
   <body>
+
     <!-- ==============================
          CABEÇALHO
          ============================== -->
@@ -232,8 +266,12 @@
           />
         </a>
 
-        <!-- DIPLOMA MOISÉS -->
-        <a href="DIPLOMA%20MOISES.png" target="_blank">
+        <!-- DIPLOMA MOISES -->
+        <a
+          class="diploma"
+          href="DIPLOMA%20MOISES.png"
+          target="_blank"
+        >
           <img
             src="DIPLOMA%20MOISES.png"
             alt="Diploma Moisés"
@@ -250,5 +288,7 @@
     <footer>
       <p>&copy; 2023 Moisés Echeveste</p>
     </footer>
+
   </body>
 </html>
+
